@@ -56,28 +56,122 @@
     */
 
     /* 👉 Task 1 - [HINT] only the flex container needs to be manipulated */
+    #flexContainer1{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      flex-direction: row;
+    }
 
     /* 👉 Task 2 - [HINT] the flex container needs to change direction */
+    #flexContainer2{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
 
     /* 👉 Task 3 - [HINT] the flex direction can be reversed */
+    #flexContainer3{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
 
     /* 👉 Task 4 - [HINT] the flex items need a new order */
+    #flexContainer4{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-end;
+    }
+    #flexContainer4 .flexItem:nth-child(1){
+      order: 2
+    }
+    #flexContainer4 .flexItem:nth-child(2){
+      order: 3
+    }
+    #flexContainer4 .flexItem:nth-child(3){
+      order: 1
+    }
 
     /* 👉 Task 5 - [HINT] research align-self */
+    #flexContainer5{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+    }
+    #flexContainer5 .flexItem:nth-child(2){
+      align-self: center;
+    }
 
     /* 👉 Task 6 - [HINT] flex items can be flex containers */
+    #flexContainer6{
+      display: flex;
+      flex-direction: row;
+    }
+
+    #flexContainer6 .flexItem:nth-child(1){ 
+      align-items: flex-end;
+      align-self: flex-end;  
+      flex-direction: column;
+      order: 3; 
+    }
+    #flexContainer6 .flexItem:nth-child(2){ 
+      align-self: flex-end;
+      justify-content: flex-end;
+      flex-direction: column;
+      order: 1;     
+    }
+
+    #flexContainer6 .flexItem:nth-child(3){ 
+      align-self: flex-start; 
+      flex-direction: column;   
+    }
+    
 
     /* 👉 Task 7 - [HINT] research flex-grow */
+    #flexContainer7{
+      display: flex;
+      flex-direction: row;
+    }
+    #flexContainer7 .flexItem:nth-child(3){ 
+      flex-grow: 12
+    }
+    #flexContainer7 .flexItem:nth-child(2){ 
+     flex-grow: 4.5
+    }
+    #flexContainer7 .flexItem:nth-child(1){ 
+       flex-grow: .2
+    }
+
 
     /* 👉 Task 8 - [HINT] you got this! */
-
+    #flexContainer8{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; 
+    }
+    #flexContainer8 .flexItem:nth-child(1){ 
+      align-self: flex-start;
+      justify-content: flex-start;
+      
+    }
+    #flexContainer8 .flexItem:nth-child(2){ 
+      align-self: center;
+    }
+    #flexContainer8 .flexItem:nth-child(3){ 
+      align-self: flex-end;
+      justify-content: flex-end;
+    }
 
     /*
     👉 Part 2 of 2 👈
     Revisit the Module Project of HTML & CSS II and re-style it using Flexbox.
     Prior to starting, remove the "inline-block" declarations, which were a workaround to make divs fall in rows.
     */
-
+     
     /* ❗ 👉 WORK ABOVE THIS LINE! */
     /* ❗ 👉 WORK ABOVE THIS LINE! */
     /* ❗ 👉 WORK ABOVE THIS LINE! */
